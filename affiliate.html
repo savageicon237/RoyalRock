@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Affiliate Program | Royal Rock </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <h1>ROYAL ROCK <span></span></h1>
+            <p>Est. 2020</p>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="affiliate.html" class="active">🌿 Herbal Affiliate</a>
+            <a href="restaurant.html">🍽️ Royal Rock Dining</a>
+            <a href="medical.html">🏥 Royal Rock Medicals</a>
+            <a href="helpful-content.html">📚 Resources</a>
+            <a href="trust-guarantee.html">⭐ Trust</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="affiliate-login.html" class="btn-login"><i class="fas fa-user"></i> Login</a>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="affiliate.html">Herbal Affiliate</a>
+        <a href="restaurant.html">Royal Rock Dining</a>
+        <a href="medical.html">Royal Rock Medicals</a>
+        <a href="helpful-content.html">Resources</a>
+        <a href="trust-guarantee.html">Trust</a>
+        <a href="affiliate-login.html">Login</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="affiliate-hero reveal">
+    <div class="container">
+        <div class="affiliate-hero-content">
+            <span class="slide-badge">🌿 Limited Time Offer</span>
+            <h1>Earn <span>15% Commission</span></h1>
+            <p>Join Royal Rock's affiliate program and turn your network into income. Natural wellness products that people love.</p>
+            <div class="commission-badge">
+                <span>15%</span> Lifetime Commission on Every Sale
+            </div>
+            <div class="hero-buttons">
+                <a href="affiliate-shop.html" class="btn-primary">Get Started →</a>
+                <a href="#how-it-works" class="btn-outline">How It Works</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Sub-page -->
+<section id="how-it-works" class="how-it-works reveal">
+    <div class="container">
+        <h2 class="section-title">How It <span>Works</span></h2>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Purchase 100,000 CFA</h3>
+                <p>Buy products worth 100,000 CFA or more to qualify for the affiliate program</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <i class="fas fa-user-plus"></i>
+                <h3>Register with Referral Code</h3>
+                <p>Sign up using an existing affiliate's referral code (or get your own after purchase)</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <i class="fas fa-share-alt"></i>
+                <h3>Share Your Unique Link</h3>
+                <p>Promote your referral link on social media, WhatsApp, or your website</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">04</div>
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>Earn 15% Commission</h3>
+                <p>Get paid weekly via Mobile Money or Bank Transfer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Requirements Section -->
+<section class="requirements reveal">
+    <div class="container">
+        <h2 class="section-title">Program <span>Requirements</span></h2>
+        <div class="requirements-card">
+            <div class="requirement-icon">
+                <i class="fas fa-gem"></i>
+            </div>
+            <h3>Minimum Purchase: 100,000 CFA</h3>
+            <p>To become a Royal Rock affiliate, you must first purchase products worth 100,000 CFA or more. This ensures you're familiar with our quality products and committed to promoting them authentically.</p>
+            <div class="requirement-steps">
+                <div class="step">
+                    <span>1</span>
+                    <p>Purchase 100,000 CFA+</p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <p>Receive referral code</p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <p>Start earning 15%</p>
+                </div>
+            </div>
+            <a href="affiliate-shop.html" class="btn-primary">Shop Now to Qualify →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Commission Structure Sub-page -->
+<section id="commission" class="commission-structure reveal">
+    <div class="container">
+        <h2 class="section-title">Commission <span>Structure</span></h2>
+        <div class="commission-grid">
+            <div class="commission-card">
+                <i class="fas fa-chart-line"></i>
+                <div class="commission-rate">15%</div>
+                <h3>Direct Sales</h3>
+                <p>Earn 15% commission on every product sold through your referral link</p>
+                <small>Example: Sell 100,000 CFA → Earn 15,000 CFA</small>
+            </div>
+            <div class="commission-card featured">
+                <i class="fas fa-users"></i>
+                <div class="commission-rate">5%</div>
+                <h3>Team Commission</h3>
+                <p>Earn 5% from affiliates you recruit (Level 2)</p>
+                <small>Example: Your recruit sells 100,000 CFA → You earn 5,000 CFA</small>
+            </div>
+            <div class="commission-card">
+                <i class="fas fa-trophy"></i>
+                <div class="commission-rate">+100,000 CFA</div>
+                <h3>Monthly Bonus</h3>
+                <p>Top 10 affiliates receive extra cash bonuses</p>
+                <small>Based on monthly sales volume</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Sub-page -->
+<section id="products" class="products-showcase reveal">
+    <div class="container">
+        <h2 class="section-title">Our <span>Best Sellers</span></h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- IMAGE: Add herbal product 1 image here -->
+                    <img src="images/herbal1.jpg" alt="Immune Boost Complex" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=Immune+Boost'">
+                </div>
+                <div class="product-info">
+                    <h3>Immune Boost Complex</h3>
+                    <p>Natural immune system support with organic ingredients</p>
+                    <div class="product-price">35,000 CFA</div>
+                    <div class="product-commission">You earn: 5,250 CFA</div>
+                    <a href="affiliate-shop.html" class="btn-small">Shop Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- IMAGE: Add herbal product 2 image here -->
+                    <img src="images/herbal2.jpg" alt="Detox Wellness Tea" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=Detox+Tea'">
+                </div>
+                <div class="product-info">
+                    <h3>Detox Wellness Tea</h3>
+                    <p>Organic detox tea bundle for natural cleansing</p>
+                    <div class="product-price">25,000 CFA</div>
+                    <div class="product-commission">You earn: 3,750 CFA</div>
+                    <a href="affiliate-shop.html" class="btn-small">Shop Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- IMAGE: Add herbal product 3 image here -->
+                    <img src="images/herbal3.jpg" alt="Energy & Vitality Capsules" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=Energy+Capsules'">
+                </div>
+                <div class="product-info">
+                    <h3>Energy & Vitality Capsules</h3>
+                    <p>Natural energy boost for daily wellness</p>
+                    <div class="product-price">40,000 CFA</div>
+                    <div class="product-commission">You earn: 6,000 CFA</div>
+                    <a href="affiliate-shop.html" class="btn-small">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Sub-page -->
+<section id="testimonials" class="testimonials reveal">
+    <div class="container">
+        <h2 class="section-title">Success <span>Stories</span></h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"I invested 100,000 CFA in products and within 2 months, I've earned over 500,000 CFA in commissions! Best decision ever."</p>
+                <div class="testimonial-author">
+                    <strong>Marie N.</strong>
+                    <span>Top Affiliate, Douala</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"The products sell themselves. Quality is amazing and my customers keep coming back. Recurring commissions every month!"</p>
+                <div class="testimonial-author">
+                    <strong>Paul T.</strong>
+                    <span>Gold Affiliate, Yaoundé</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Royal Rock's affiliate program changed my life. I quit my job and now earn full-time from home."</p>
+                <div class="testimonial-author">
+                    <strong>Sarah K.</strong>
+                    <span>Super Affiliate, Bamenda</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>ROYAL ROCK <span></span></h3>
+                <p>Join thousands of successful affiliates earning passive income with Royal Rock.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Affiliate Links</h4>
+                <a href="affiliate-shop.html">Shop to Qualify</a>
+                <a href="affiliate-login.html">Affiliate Login</a>
+                <a href="affiliate-register.html">Register</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-phone"></i> +237 653 376 334</p>
+                <p><i class="fas fa-envelope"></i> affiliate@royalrock.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Royal Rock  - Affiliate Program</p>
+        </div>
+    </div>
+</footer>
+
+<script src="supabase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

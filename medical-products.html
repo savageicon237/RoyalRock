@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | Royal Rock Medicals</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <h1>ROYAL ROCK <span></span></h1>
+            <p>Est. 2020</p>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="affiliate.html">🌿 Herbal Affiliate</a>
+            <a href="restaurant.html">🍽️ Royal Rock Dining</a>
+            <a href="medical.html" class="active">🏥 Royal Rock Medicals</a>
+            <a href="helpful-content.html">📚 Resources</a>
+            <a href="trust-guarantee.html">⭐ Trust</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="affiliate-login.html" class="btn-login"><i class="fas fa-user"></i> Login</a>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="affiliate.html">Herbal Affiliate</a>
+        <a href="restaurant.html">Royal Rock Dining</a>
+        <a href="medical.html">Royal Rock Medicals</a>
+        <a href="helpful-content.html">Resources</a>
+        <a href="trust-guarantee.html">Trust</a>
+        <a href="affiliate-login.html">Login</a>
+    </div>
+</nav>
+
+<section class="menu-header reveal">
+    <div class="container">
+        <h1>All <span>Medical Products</span></h1>
+        <p>Browse our complete catalog of medical equipment and supplies</p>
+        <a href="medical.html" class="btn-outline">← Back to Medicals</a>
+    </div>
+</section>
+
+<section class="medical-products-full reveal">
+    <div class="container">
+        <div class="medical-products-grid">
+            <div class="medical-card">
+                <div class="medical-image">
+                    <img src="images/medical1.jpg" alt="Patient Monitor" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=Patient+Monitor'">
+                </div>
+                <div class="medical-info">
+                    <h3>Patient Monitor</h3>
+                    <p>Multi-parameter monitoring with ECG, SpO2, NIBP, temperature</p>
+                    <div class="price">850,000 CFA</div>
+                    <a href="medical-contact.html" class="btn-small">Request Quote</a>
+                </div>
+            </div>
+            <div class="medical-card">
+                <div class="medical-image">
+                    <img src="images/medical2.jpg" alt="Ultrasound" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=Ultrasound'">
+                </div>
+                <div class="medical-info">
+                    <h3>Portable Ultrasound</h3>
+                    <p>Color doppler, 3D/4D imaging, wireless connectivity</p>
+                    <div class="price">2,500,000 CFA</div>
+                    <a href="medical-contact.html" class="btn-small">Request Quote</a>
+                </div>
+            </div>
+            <div class="medical-card">
+                <div class="medical-image">
+                    <img src="images/medical3.jpg" alt="Surgical Lights" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=Surgical+Lights'">
+                </div>
+                <div class="medical-info">
+                    <h3>Surgical LED Lights</h3>
+                    <p>Shadowless, adjustable intensity, LED technology</p>
+                    <div class="price">1,200,000 CFA</div>
+                    <a href="medical-contact.html" class="btn-small">Request Quote</a>
+                </div>
+            </div>
+            <div class="medical-card">
+                <div class="medical-image">
+                    <img src="images/medical4.jpg" alt="Hospital Bed" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=Hospital+Bed'">
+                </div>
+                <div class="medical-info">
+                    <h3>Electric Hospital Bed</h3>
+                    <p>Adjustable height, Trendelenburg position, side rails</p>
+                    <div class="price">650,000 CFA</div>
+                    <a href="medical-contact.html" class="btn-small">Request Quote</a>
+                </div>
+            </div>
+            <div class="medical-card">
+                <div class="medical-image">
+                    <img src="images/medical5.jpg" alt="ECG Machine" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=ECG+Machine'">
+                </div>
+                <div class="medical-info">
+                    <h3>12-Lead ECG Machine</h3>
+                    <p>Digital ECG with interpretation software</p>
+                    <div class="price">450,000 CFA</div>
+                    <a href="medical-contact.html" class="btn-small">Request Quote</a>
+                </div>
+            </div>
+            <div class="medical-card">
+                <div class="medical-image">
+                    <img src="images/medical6.jpg" alt="Ventilator" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=Ventilator'">
+                </div>
+                <div class="medical-info">
+                    <h3>ICU Ventilator</h3>
+                    <p>Advanced ventilation modes for critical care</p>
+                    <div class="price">3,500,000 CFA</div>
+                    <a href="medical-contact.html" class="btn-small">Request Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="supabase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

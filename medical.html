@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Rock Medicals | Premium Medical Equipment</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <h1>ROYAL ROCK <span></span></h1>
+            <p>Est. 2020</p>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="affiliate.html">🌿 Herbal Affiliate</a>
+            <a href="restaurant.html">🍽️ Royal Rock Dining</a>
+            <a href="medical.html" class="active">🏥 Royal Rock Medicals</a>
+            <a href="helpful-content.html">📚 Resources</a>
+            <a href="trust-guarantee.html">⭐ Trust</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="affiliate-login.html" class="btn-login"><i class="fas fa-user"></i> Login</a>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="affiliate.html">Herbal Affiliate</a>
+        <a href="restaurant.html">Royal Rock Dining</a>
+        <a href="medical.html">Royal Rock Medicals</a>
+        <a href="helpful-content.html">Resources</a>
+        <a href="trust-guarantee.html">Trust</a>
+        <a href="affiliate-login.html">Login</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="page-header reveal">
+    <div class="container">
+        <h1>Royal Rock <span>Medicals</span></h1>
+        <p>Premium Medical Equipment & Supplies for Healthcare Professionals</p>
+        <div class="hero-buttons">
+            <a href="medical-products.html" class="btn-primary">Shop Equipment</a>
+            <a href="medical-contact.html" class="btn-outline">Request Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- Products Sub-page -->
+<section id="products" class="medical-products reveal">
+    <div class="container">
+        <h2 class="section-title">Featured <span>Equipment</span></h2>
+        <div class="medical-products-grid">
+            <div class="medical-card">
+                <div class="medical-image">
+                    <!-- IMAGE: Add medical product 1 image here -->
+                    <img src="images/medical1.jpg" alt="Patient Monitor" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=Patient+Monitor'">
+                </div>
+                <div class="medical-info">
+                    <h3>Patient Monitor</h3>
+                    <p>Multi-parameter patient monitoring system with touchscreen display</p>
+                    <div class="price">850,000 CFA</div>
+                    <a href="medical-contact.html" class="btn-small">Request Quote</a>
+                </div>
+            </div>
+            <div class="medical-card">
+                <div class="medical-image">
+                    <!-- IMAGE: Add medical product 2 image here -->
+                    <img src="images/medical2.jpg" alt="Ultrasound Machine" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=Ultrasound'">
+                </div>
+                <div class="medical-info">
+                    <h3>Ultrasound Machine</h3>
+                    <p>Portable ultrasound with color doppler and 3D/4D imaging</p>
+                    <div class="price">2,500,000 CFA</div>
+                    <a href="medical-contact.html" class="btn-small">Request Quote</a>
+                </div>
+            </div>
+            <div class="medical-card">
+                <div class="medical-image">
+                    <!-- IMAGE: Add medical product 3 image here -->
+                    <img src="images/medical3.jpg" alt="Surgical Lights" onerror="this.src='https://placehold.co/300x220/1a1a2e/c9a03d?text=Surgical+Lights'">
+                </div>
+                <div class="medical-info">
+                    <h3>Surgical LED Lights</h3>
+                    <p>Shadowless surgical lighting system with adjustable intensity</p>
+                    <div class="price">1,200,000 CFA</div>
+                    <a href="medical-contact.html" class="btn-small">Request Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Categories Sub-page -->
+<section id="categories" class="categories-section reveal">
+    <div class="container">
+        <h2 class="section-title">Product <span>Categories</span></h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Diagnostic Equipment</h3>
+                <p>Patient monitors, ECG machines, ultrasound systems</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-syringe"></i>
+                <h3>Surgical Instruments</h3>
+                <p>Surgical lights, tables, and precision instruments</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-wheelchair"></i>
+                <h3>Mobility Aids</h3>
+                <p>Wheelchairs, walkers, hospital beds</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-flask"></i>
+                <h3>Lab Equipment</h3>
+                <p>Centrifuges, microscopes, analyzers</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>PPE & Supplies</h3>
+                <p>Gloves, masks, gowns, sanitizers</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-truck"></i>
+                <h3>Hospital Furniture</h3>
+                <p>Hospital beds, stretchers, medical cabinets</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Us Sub-page -->
+<section id="why-us" class="why-medical reveal">
+    <div class="container">
+        <h2 class="section-title">Why Choose <span>Royal Rock Medicals</span></h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Certified Products</h3>
+                <p>All equipment meets international quality standards (CE, FDA, ISO)</p>
+            </div>
+            <div class="why-card">
+                <i class="fas fa-wrench"></i>
+                <h3>Warranty & Service</h3>
+                <p>12-month warranty with after-sales technical support</p>
+            </div>
+            <div class="why-card">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Fast Delivery</h3>
+                <p>Delivery across Cameroon within 3-7 days</p>
+            </div>
+            <div class="why-card">
+                <i class="fas fa-user-md"></i>
+                <h3>Expert Consultation</h3>
+                <p>Free consultation to help you choose the right equipment</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>ROYAL ROCK <span></span></h3>
+                <p>Quality medical equipment for healthcare excellence.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="medical-products.html">Shop All</a>
+                <a href="medical-contact.html">Request Quote</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-phone"></i> +237 653 376 334</p>
+                <p><i class="fas fa-envelope"></i> medical@royalrock.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Royal Rock  - Royal Rock Medicals</p>
+        </div>
+    </div>
+</footer>
+
+<script src="supabase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
