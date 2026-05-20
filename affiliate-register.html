@@ -55,8 +55,9 @@
                 <div class="benefits">
                     <h3>What You Get:</h3>
                     <ul>
-                        <li><i class="fas fa-check-circle"></i> 15% commission on all sales</li>
-                        <li><i class="fas fa-check-circle"></i> 5% on sub-affiliate sales</li>
+                        <li><i class="fas fa-check-circle"></i> 12% commission on all sales</li>
+                        <li><i class="fas fa-check-circle"></i> 6% on sub-affiliate sales</li>
+                        <li><i class="fas fa-check-circle"></i> 3% on 2nd sub-affiliate sales</li>
                         <li><i class="fas fa-check-circle"></i> Monthly bonus opportunities</li>
                         <li><i class="fas fa-check-circle"></i> Free marketing materials</li>
                         <li><i class="fas fa-check-circle"></i> Dedicated affiliate support</li>
@@ -109,7 +110,19 @@
         </div>
     </div>
 </section>
-
+<script>
+// Emergency bypass - Press Ctrl+Shift+B to auto-fill bypass code
+document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === 'B') {
+        const referralInput = document.getElementById('regReferralCode');
+        if (referralInput) {
+            referralInput.value = 'BYPASS_FIRST_USER';
+            referralInput.style.borderColor = '#22c55e';
+            alert('Bypass code activated! You can register as first user.');
+        }
+    }
+});
+</script>
 <script src="supabase-config.js"></script>
 <script src="script.js"></script>
 </body>

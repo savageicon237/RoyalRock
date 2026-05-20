@@ -3,7 +3,7 @@
 // Get these from your Supabase Project Settings → API
 
 const SUPABASE_URL = "https://mbttprvyifkfdjfcewyg.supabase.co";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1idHRwcnZ5aWZrZmRqZmNld3lnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkyNjU2MjksImV4cCI6MjA5NDg0MTYyOX0.MxOgHPf0y25gwwBT1kE6_tMv09y9WS_96VuY4mCQpcg";
+const SUPABASE_ANON_KEY = "sb_publishable_I66_7Uo3oPJsqP5pNtRwmg_8_cKh-4U";
 
 // Initialize Supabase client
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);

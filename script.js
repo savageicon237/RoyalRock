@@ -388,17 +388,32 @@ if (typeof supabase !== 'undefined' && window.supabase) {
                 return;
             }
             
-            // Check if referral code exists
-            const { data: referrer } = await supabase
-                .from('users')
-                .select('referral_code')
-                .eq('referral_code', referralCode)
-                .single();
-            
-            if (!referrer) {
-                showNotification('Invalid referral code!', 'error');
-                return;
-            }
+           // Allow first user to register without referral code
+let referrer = null;
+let isFirstUser = false;
+
+// Check if any users exist in database
+const { count: userCount, error: countError } = await supabase
+    .from('users')
+    .select('*', { count: 'exact', head: true });
+
+if (userCount === 0 && referralCode === 'FIRST') {
+    isFirstUser = true;
+} else {
+    // Check if referral code exists
+    const { data: refData } = await supabase
+        .from('users')
+        .select('id, referral_code')
+        .eq('referral_code', referralCode)
+        .single();
+    
+    referrer = refData;
+    
+    if (!referrer && !isFirstUser) {
+        showNotification('Invalid referral code!', 'error');
+        return;
+    }
+}
             
             // Check if user has purchased 100k+
             const { data: orders } = await supabase
